@@ -1,0 +1,168 @@
+* {
+ font-size: 100%;
+ font-family: "Titillium Web", sans-serif;
+}
+
+.navbar ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #F0F0F0;
+}
+
+#nav-title {
+  font-weight: 700;
+}
+
+#lang-zh {
+  float: right;
+}
+
+#main {
+  margin-top: 100px;
+  scroll-margin-top: 100px;
+}
+
+#presidential, #legislative {
+  scroll-margin-top: 60px;
+}
+
+h1 {
+  font-size: 54px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  padding-left: 30px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 0px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+}
+
+.image {
+  padding: 5px 10px;
+}
+
+.nominee, .party {
+  padding: 10px 55px 10px 10px;
+}
+
+.share-bar, .vote {
+  padding: 0px 10px;
+}
+
+
+.dpp-row .image {
+  border-left: 5px solid #1B9431;
+}
+
+.kmt-row .image {
+  border-left: 5px solid #000099;
+}
+
+.tpp-row .image {
+  border-left: 5px solid #28C7C7;
+}
+
+.npp-row .image {
+  border-left: 5px solid #FFBE00;
+}
+
+.ind-row .image {
+  border-left: 5px solid #999999;
+}
+
+#presidential-map {
+  display: block;
+  margin: auto;
+  min-width: 200px;
+  max-width: 30%;
+  height: auto;
+}
+
+.new-taipei, .taoyuan, .taichung, .tainan, .kaohsiung, .yilan, .changhua, .nantou, .yunlin, .chiayi-county, .chiayi-city, .pingtung, .penghu {
+  fill: #21B93D;
+}
+
+.keelung, .miaoli, .hualien, .taitung, .kinmen, .lienchiang {
+  fill: #0000BF;
+}
+
+.taipei, .hsinchu-county, .hsinchu-city {
+  fill: #4fDBDB;
+}
+
+.new-taipei:hover, .taoyuan:hover, .taichung:hover, .tainan:hover, .kaohsiung:hover, .yilan:hover, .changhua:hover, .nantou:hover, .yunlin:hover, .chiayi-county:hover, .chiayi-city:hover, .pingtung:hover, .penghu:hover {
+  fill: #1B9431;
+}
+
+.keelung:hover, .miaoli:hover, .hualien:hover, .taitung:hover, .kinmen:hover, .lienchiang:hover {
+  fill: #000099;
+}
+
+.taipei:hover, .hsinchu-county:hover, .hsinchu-city:hover {
+  fill: #28C7C7;
+}
+
+rect:hover ~ .penghu {
+  fill: #1B9431;
+}
+
+rect:hover ~ .kinmen {
+  fill: #000099;
+}
+
+rect:hover ~ .lienchiang {
+  fill: #000099;
+}
+
+.legislative .vote {
+  text-align: center;
+}
+
+tr:hover {
+  background-color: #F0F0F0;
+}
+
+.legislative img {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+}
+
+.legislative .image {
+  padding: 10px 15px;
+}

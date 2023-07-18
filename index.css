@@ -3,6 +3,12 @@
  font-family: "Titillium Web", sans-serif;
 }
 
+@media screen and (max-width: 1350px) {
+  * {
+    font-size: 105%;
+  }
+}
+
 .navbar ul {
   position: fixed;
   top: 0;
@@ -108,9 +114,10 @@ td img {
 #presidential-map {
   display: block;
   margin: auto;
-  min-width: 200px;
-  max-width: 30%;
-  height: auto;
+  min-height: 300px;
+  max-height: 80vh;
+  width: auto;
+  padding: 50px 120px;
 }
 
 .new-taipei, .taoyuan, .taichung, .tainan, .kaohsiung, .yilan, .changhua, .nantou, .yunlin, .chiayi-county, .chiayi-city, .pingtung, .penghu {
@@ -165,4 +172,10 @@ tr:hover {
 
 .legislative .image {
   padding: 10px 15px;
+}
+
+@media screen and (max-width: 1350px) {
+  .nominee, .party {
+    padding: 10px 25px 10px 10px;
+  }
 }

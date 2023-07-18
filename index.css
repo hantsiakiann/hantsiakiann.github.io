@@ -2,11 +2,11 @@
   font-size: 100%;
 }
 
-.en * {
+.en {
   font-family: "Titillium Web", sans-serif;
 }
 
-.zh-tw * {
+.zh-tw {
   font-family: "Noto Sans TC", sans-serif;
 }
 
@@ -50,7 +50,7 @@
   font-weight: 700;
 }
 
-#lang-zh {
+#lang-zh, #lang-en {
   float: right;
 }
 
@@ -121,7 +121,7 @@ td img {
 #presidential-map {
   display: block;
   margin: auto;
-  min-height: 300px;
+  min-height: 500px;
   max-height: 80vh;
   width: auto;
   padding: 50px 120px;

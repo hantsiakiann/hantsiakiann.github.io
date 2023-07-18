@@ -1,6 +1,13 @@
 * {
- font-size: 100%;
- font-family: "Titillium Web", sans-serif;
+  font-size: 100%;
+}
+
+.en * {
+  font-family: "Titillium Web", sans-serif;
+}
+
+.zh-tw * {
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 @media screen and (max-width: 1350px) {

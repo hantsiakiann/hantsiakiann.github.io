@@ -1,5 +1,5 @@
 * {
-  font-size: 100%;
+  font-size: 20px;
 }
 
 .en {
@@ -8,12 +8,6 @@
 
 .zh-tw {
   font-family: "Noto Sans TC", sans-serif;
-}
-
-@media screen and (max-width: 1350px) {
-  * {
-    font-size: 105%;
-  }
 }
 
 .navbar ul {
@@ -60,7 +54,7 @@
 }
 
 #presidential, #legislative {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 75px;
 }
 
 h1 {
@@ -69,8 +63,18 @@ h1 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
   padding-left: 30px;
+}
+
+h3 {
+  font-size: 36px;
+  padding-left: 30px;
+}
+
+h4 {
+  font-size: 28px;
+  padding-left: 60px;
 }
 
 table {
@@ -97,25 +101,48 @@ td img {
   padding: 0px 10px;
 }
 
+.seats {
+  padding: 0px 10px 0px 40px;
+}
 
-.dpp-row .image {
+.dpp-row .image, .dpp {
   border-left: 5px solid #1B9431;
 }
 
-.kmt-row .image {
+.kmt-row .image, .kmt {
   border-left: 5px solid #000099;
 }
 
-.tpp-row .image {
+.tpp-row .image, .tpp {
   border-left: 5px solid #28C7C7;
 }
 
-.npp-row .image {
+.npp-row .image, .npp {
   border-left: 5px solid #FFBE00;
 }
 
-.ind-row .image {
+.tsp-row .image, .tsp {
+  border-left: 5px solid #A73F24;
+}
+
+.ind-row .image, .ind {
   border-left: 5px solid #999999;
+}
+
+.sdp {
+  border-left: 5px solid #FF0088;
+}
+
+.cp {
+  border-left: 5px solid #DC143C;
+}
+
+.fa {
+  border-left: 5px solid #48C1BC;
+}
+
+.tmgp {
+  border-left: 5px solid #00561E;
 }
 
 #presidential-map {
@@ -127,7 +154,7 @@ td img {
   padding: 50px 120px;
 }
 
-.new-taipei, .taoyuan, .taichung, .tainan, .kaohsiung, .yilan, .changhua, .nantou, .yunlin, .chiayi-county, .chiayi-city, .pingtung, .penghu {
+.taipei, .new-taipei, .taoyuan, .taichung, .tainan, .kaohsiung, .yilan, .changhua, .nantou, .yunlin, .chiayi-county, .chiayi-city, .pingtung, .penghu {
   fill: #21B93D;
 }
 
@@ -135,11 +162,11 @@ td img {
   fill: #0000BF;
 }
 
-.taipei, .hsinchu-county, .hsinchu-city {
+.hsinchu-county, .hsinchu-city {
   fill: #4fDBDB;
 }
 
-.new-taipei:hover, .taoyuan:hover, .taichung:hover, .tainan:hover, .kaohsiung:hover, .yilan:hover, .changhua:hover, .nantou:hover, .yunlin:hover, .chiayi-county:hover, .chiayi-city:hover, .pingtung:hover, .penghu:hover {
+.taipei:hover, .new-taipei:hover, .taoyuan:hover, .taichung:hover, .tainan:hover, .kaohsiung:hover, .yilan:hover, .changhua:hover, .nantou:hover, .yunlin:hover, .chiayi-county:hover, .chiayi-city:hover, .pingtung:hover, .penghu:hover {
   fill: #1B9431;
 }
 
@@ -147,7 +174,7 @@ td img {
   fill: #000099;
 }
 
-.taipei:hover, .hsinchu-county:hover, .hsinchu-city:hover {
+.hsinchu-county:hover, .hsinchu-city:hover {
   fill: #28C7C7;
 }
 
@@ -163,7 +190,7 @@ rect:hover ~ .lienchiang {
   fill: #000099;
 }
 
-.legislative .vote {
+.legislative .vote, .legislative .seats {
   text-align: center;
 }
 
@@ -185,4 +212,28 @@ tr:hover {
   .nominee, .party {
     padding: 10px 25px 10px 10px;
   }
+}
+
+.district {
+  padding: 30px;
+  font-weight: 700;
+}
+
+.candidate {
+  padding: 10px 35px 10px 10px;
+}
+
+.legislator-party {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0px;
+  color: #666666;
+}
+
+.indigenous {
+  padding: 20px 50px;
+}
+
+.indigenous tbody:hover, .indigenous tbody >:hover {
+  background-color: #F0F0F0;
 }

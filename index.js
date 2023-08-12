@@ -40,7 +40,6 @@ document.getElementById("tpp-presidential-bar").setAttribute("width", pres_pred[
 // change colors upon hovering
 for (const [key, value] of Object.entries(pres_pred)) {
 	if (key != "all") {
-		console.log(pres_pred[key].Fill);
   		document.getElementById(pres_pred[key].Class).style.fill = pres_pred[key].Fill;
   		document.getElementById(pres_pred[key].Class).addEventListener("mouseenter",
   			(event) => {event.target.style.fill = pres_pred[key].Hover;},

@@ -15,6 +15,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 999;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -89,6 +90,10 @@ td img {
   border-radius: 80px;
 }
 
+tr:hover {
+  background-color: #F0F0F0;
+}
+
 .image {
   padding: 5px 10px;
 }
@@ -133,6 +138,10 @@ td img {
   border-left: 5px solid #FF0088;
 }
 
+.gpt {
+  border-left: 5px solid #73BE00;
+}
+
 .cp {
   border-left: 5px solid #DC143C;
 }
@@ -145,6 +154,53 @@ td img {
   border-left: 5px solid #00561E;
 }
 
+.trp {
+  border-left: 5px solid #FFF000;
+}
+
+.lp {
+  border-left: 5px solid #FE0000;
+}
+
+.panel-box {
+  display: flex;
+}
+
+.two-panel {
+  flex: 1;
+}
+
+.table-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.table-center tr td {
+  font-size: 18px;
+}
+
+.table-center img {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+
+.table-center .nominee {
+  padding: 5px 35px 5px 5px;
+}
+
+.table-center .share-bar, .table-center .vote {
+  padding: 0px 10px;
+}
+
+.presidential-party {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0px;
+  color: #666666;
+}
+
 #presidential-map {
   display: block;
   margin: auto;
@@ -154,48 +210,17 @@ td img {
   padding: 50px 120px;
 }
 
-.taipei, .new-taipei, .taoyuan, .taichung, .tainan, .kaohsiung, .yilan, .changhua, .nantou, .yunlin, .chiayi-county, .chiayi-city, .pingtung, .penghu {
-  fill: #21B93D;
+.header-row:hover {
+  background-color: transparent;
 }
 
-.keelung, .miaoli, .hualien, .taitung, .kinmen, .lienchiang {
-  fill: #0000BF;
-}
-
-.hsinchu-county, .hsinchu-city {
-  fill: #4fDBDB;
-}
-
-.taipei:hover, .new-taipei:hover, .taoyuan:hover, .taichung:hover, .tainan:hover, .kaohsiung:hover, .yilan:hover, .changhua:hover, .nantou:hover, .yunlin:hover, .chiayi-county:hover, .chiayi-city:hover, .pingtung:hover, .penghu:hover {
-  fill: #1B9431;
-}
-
-.keelung:hover, .miaoli:hover, .hualien:hover, .taitung:hover, .kinmen:hover, .lienchiang:hover {
-  fill: #000099;
-}
-
-.hsinchu-county:hover, .hsinchu-city:hover {
-  fill: #28C7C7;
-}
-
-rect:hover ~ .penghu {
-  fill: #1B9431;
-}
-
-rect:hover ~ .kinmen {
-  fill: #000099;
-}
-
-rect:hover ~ .lienchiang {
-  fill: #000099;
+#presidential-constituency {
+  font-size: 28px;
+  padding: 20px;
 }
 
 .legislative .vote, .legislative .seats {
   text-align: center;
-}
-
-tr:hover {
-  background-color: #F0F0F0;
 }
 
 .legislative img {
@@ -211,6 +236,15 @@ tr:hover {
 @media screen and (max-width: 1350px) {
   .nominee, .party {
     padding: 10px 25px 10px 10px;
+  }
+
+  .panel-box {
+    display: block;
+  }
+
+  .table-center {
+    position: static;
+    transform: none;
   }
 }
 

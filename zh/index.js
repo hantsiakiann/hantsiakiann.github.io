@@ -36,12 +36,34 @@ document.getElementById("tpp-presidential-bar").setAttribute("width", pres_pred[
 document.getElementById("ind-presidential-share").innerHTML = pres_pred["all"].IND.toFixed(1).toString().concat("%");
 document.getElementById("ind-presidential-bar").setAttribute("width", pres_pred["all"].IND*2.5);
 
+// fill county table with national average as default
+document.getElementById("dpp-presidential-county-share").innerHTML = pres_pred["all"].DPP.toFixed(1).toString().concat("%");
+document.getElementById("dpp-presidential-county-bar").setAttribute("width", pres_pred["all"].DPP*2);
+
+document.getElementById("kmt-presidential-county-share").innerHTML = pres_pred["all"].KMT.toFixed(1).toString().concat("%");
+document.getElementById("kmt-presidential-county-bar").setAttribute("width", pres_pred["all"].KMT*2);
+
+document.getElementById("tpp-presidential-county-share").innerHTML = pres_pred["all"].TPP.toFixed(1).toString().concat("%");
+document.getElementById("tpp-presidential-county-bar").setAttribute("width", pres_pred["all"].TPP*2);
+
+document.getElementById("ind-presidential-county-share").innerHTML = pres_pred["all"].IND.toFixed(1).toString().concat("%");
+document.getElementById("ind-presidential-county-bar").setAttribute("width", pres_pred["all"].IND*2);
+
 // change colors upon hovering
 for (const [key, value] of Object.entries(pres_pred)) {
 	if (key != "all") {
   		document.getElementById(pres_pred[key].Class).style.fill = pres_pred[key].Fill;
   		document.getElementById(pres_pred[key].Class).addEventListener("mouseenter",
-  			(event) => {event.target.style.fill = pres_pred[key].Hover;},
+  			(event) => {event.target.style.fill = pres_pred[key].Hover;
+  				document.getElementById("presidential-constituency").innerHTML = pres_pred[key].Chinese;
+  				document.getElementById("dpp-presidential-county-share").innerHTML = pres_pred[key].DPP.toFixed(1).toString().concat("%");
+				document.getElementById("dpp-presidential-county-bar").setAttribute("width", pres_pred[key].DPP*2);
+				document.getElementById("kmt-presidential-county-share").innerHTML = pres_pred[key].KMT.toFixed(1).toString().concat("%");
+				document.getElementById("kmt-presidential-county-bar").setAttribute("width", pres_pred[key].KMT*2);
+				document.getElementById("tpp-presidential-county-share").innerHTML = pres_pred[key].TPP.toFixed(1).toString().concat("%");
+				document.getElementById("tpp-presidential-county-bar").setAttribute("width", pres_pred[key].TPP*2);
+				document.getElementById("ind-presidential-county-share").innerHTML = pres_pred[key].IND.toFixed(1).toString().concat("%");
+				document.getElementById("ind-presidential-county-bar").setAttribute("width", pres_pred[key].IND*2);},
   			false,);
   		document.getElementById(pres_pred[key].Class).addEventListener("mouseleave",
   			(event) => {event.target.style.fill = pres_pred[key].Fill;},

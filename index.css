@@ -85,25 +85,83 @@ table {
 }
 
 td img {
-  width: 80px;
-  height: 80px;
-  border-radius: 80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
 }
 
 tr:hover {
   background-color: #F0F0F0;
 }
 
+#presidential-header-row {
+  font-size: 24px;
+}
+
+#presidential-header-row:hover {
+  background: transparent;
+}
+
+#presidential-header-row th {
+  padding: 10px 0px;
+}
+
 .image {
   padding: 5px 10px;
 }
 
-.nominee, .party {
-  padding: 10px 55px 10px 10px;
+.vp-image {
+  padding: 5px 20px 5px 0px;
 }
 
-.share-bar, .vote {
-  padding: 0px 10px;
+.nominee {
+  padding: 10px;
+}
+
+.party {
+  padding: 10px 50px;
+}
+
+.share-bar {
+  padding: 0px 10px 0px 20px;
+}
+
+.vote {
+  padding: 0px 20px 0px 10px;
+}
+
+.chance {
+  padding: 30px;
+  text-align: center;
+  display: table-cell;
+  color: white;
+  margin: auto;
+  vertical-align: middle;
+}
+
+#dpp-chance, #dpp-county-chance {
+  background-color: #1B9431;
+}
+
+#kmt-chance, #kmt-county-chance {
+  background-color: #000099;
+}
+
+#tpp-chance, #tpp-county-chance {
+  background-color: #28C7C7;
+}
+
+#dpp-chance, #kmt-chance, #tpp-chance {
+  width: 70px;
+  height: 40px;
+  line-height: 40px;
+}
+
+#dpp-county-chance, #kmt-county-chance, #tpp-county-chance {
+  font-size: 18px;
+  width: 60px;
+  height: 36px;
+  line-height: 36px;
 }
 
 .seats {
@@ -154,7 +212,7 @@ tr:hover {
   border-left: 5px solid #00561E;
 }
 
-.trp {
+.trevp {
   border-left: 5px solid #FFF000;
 }
 
@@ -166,8 +224,20 @@ tr:hover {
   display: flex;
 }
 
-.two-panel {
-  flex: 1;
+.map {
+  float: left;
+  width: 40%;
+}
+
+.prediction-table {
+  float: left;
+  width: 60%;
+}
+
+.panel-box:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .table-center {
@@ -181,9 +251,9 @@ tr:hover {
 }
 
 .table-center img {
-  width: 70px;
-  height: 70px;
-  border-radius: 70px;
+  width: 90px;
+  height: 90px;
+  border-radius: 90px;
 }
 
 .table-center .nominee {
@@ -199,6 +269,7 @@ tr:hover {
   font-style: italic;
   margin: 0px;
   color: #666666;
+  width: 100px;
 }
 
 #presidential-map {
@@ -216,7 +287,14 @@ tr:hover {
 
 #presidential-constituency {
   font-size: 28px;
-  padding: 20px;
+  padding: 10px;
+}
+
+#county-rating {
+  float: right;
+  width: 120px;
+  padding: 8px;
+  color: white;
 }
 
 .legislative .vote, .legislative .seats {
@@ -234,17 +312,40 @@ tr:hover {
 }
 
 @media screen and (max-width: 1350px) {
-  .nominee, .party {
+  #presidential td.nominee, #presidential td.party {
     padding: 10px 25px 10px 10px;
+    height: 100px;
+  }
+
+  #presidential td.nominee {
+    width: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  #presidential td.party {
+    width: 100px;
   }
 
   .panel-box {
     display: block;
   }
 
+  .map {
+    width: 100%;
+  }
+
+  .prediction-table {
+    width: 100%;
+  }
+
   .table-center {
-    position: static;
     transform: none;
+  }
+
+  .table-center tbody {
+    display: block;
+    margin: auto;
   }
 }
 

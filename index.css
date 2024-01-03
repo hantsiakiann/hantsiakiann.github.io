@@ -132,6 +132,7 @@ tr:hover {
 
 .chance {
   padding: 30px;
+  width: 70px;
   text-align: center;
   display: table-cell;
   color: white;
@@ -139,15 +140,15 @@ tr:hover {
   vertical-align: middle;
 }
 
-#dpp-chance, #dpp-county-chance {
+#dpp-chance, #dpp-county-chance, .dpp-seats {
   background-color: #1B9431;
 }
 
-#kmt-chance, #kmt-county-chance {
+#kmt-chance, #kmt-county-chance, .kmt-seats {
   background-color: #000099;
 }
 
-#tpp-chance, #tpp-county-chance {
+#tpp-chance, #tpp-county-chance, .tpp-seats {
   background-color: #28C7C7;
 }
 
@@ -165,7 +166,34 @@ tr:hover {
 }
 
 .seats {
-  padding: 0px 10px 0px 40px;
+  padding: 20px 30px;
+  width: 40px;
+  height: 36px;
+  text-align: center;
+  display: table-cell;
+  color: white;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.npp-seats, .tsp-seats {
+  color: black;
+}
+
+.ind-seats {
+  background-color: #999999;
+}
+
+.dpp-seats, .kmt-seats, .tpp-seats, .npp-seats, .tsp-seats, .ind-seats {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.candidate {
+  padding: 10px 35px 10px 10px;
+  width: 100px;
+  border-left: 5px solid transparent;
 }
 
 .dpp-row .image, .dpp {
@@ -192,6 +220,10 @@ tr:hover {
   border-left: 5px solid #999999;
 }
 
+.legislative-note {
+  padding: 0px 30px;
+}
+
 .sdp {
   border-left: 5px solid #FF0088;
 }
@@ -200,24 +232,12 @@ tr:hover {
   border-left: 5px solid #73BE00;
 }
 
-.cp {
-  border-left: 5px solid #DC143C;
+.np {
+  border-left: 5px solid #FFDA00;
 }
 
 .fa {
   border-left: 5px solid #48C1BC;
-}
-
-.tmgp {
-  border-left: 5px solid #00561E;
-}
-
-.trevp {
-  border-left: 5px solid #FFF000;
-}
-
-.lp {
-  border-left: 5px solid #FE0000;
 }
 
 .panel-box {
@@ -301,6 +321,10 @@ tr:hover {
   text-align: center;
 }
 
+.legislative .seats {
+  text-color: white;
+}
+
 .legislative img {
   width: 60px;
   height: 60px;
@@ -350,12 +374,10 @@ tr:hover {
 }
 
 .district {
-  padding: 30px;
+  padding: 15px 30px;
   font-weight: 700;
-}
-
-.candidate {
-  padding: 10px 35px 10px 10px;
+  width: 180px;
+  text-align: center;
 }
 
 .legislator-party {
@@ -369,6 +391,48 @@ tr:hover {
   padding: 20px 50px;
 }
 
-.indigenous tbody:hover, .indigenous tbody >:hover {
+.indigenous tbody:hover{
   background-color: #F0F0F0;
+}
+
+.legislative-rating {
+  text-align: center;
+  width: 120px;
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 16px;
+  padding: 5px;
+  color: white;
+}
+
+.safe-dpp {
+  background-color: #1B9431;
+}
+
+.likely-dpp {
+  background-color: #49A95A;
+}
+
+.lean-dpp {
+  background-color: #77BF83;
+}
+
+.safe-kmt {
+  background-color: #3333AD;
+}
+
+.likely-kmt {
+  background-color: #6666C2;
+}
+
+.lean-kmt {
+  background-color: #9494D4;
+}
+
+.safe-ind {
+  background-color: #999999;
+}
+
+.tossup {
+  background-color: #D7D7D7;
 }

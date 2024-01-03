@@ -253,17 +253,9 @@
 		<h2 id="legislative">立委席次</h2>
 		<div class="overall-legislative">
 			<table>
-				<tr class="dpp-row">
-					<td class="image"><img src="../img/dpp.png" alt="民主進步黨"></td>
-					<td class="party">民主進步黨</td>
-					<td class="share-bar">
-						<svg width="250" height="90">
-							<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-							<rect x="0" y="37.5" width="117.257" height="15" style="fill: #1B9431" />
-							<line x1="125" y1="10" x2="125" y2="90" style="stroke: #666666; stroke-width: 2px" />
-						</svg>
-					</td>
-					<td class="vote">53</td>
+				<tr class="header-row">
+					<th colspan="2">政黨</th>
+					<th colspan="2">席次</th>
 				</tr>
 				<tr class="kmt-row">
 					<td class="image"><img src="../img/kmt.svg" alt="中國國民黨"></td>
@@ -271,11 +263,23 @@
 					<td class="share-bar">
 						<svg width="250" height="90">
 							<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-							<rect x="0" y="37.5" width="106.195" height="15" style="fill: #000099" />
+							<rect x="0" y="37.5" width="121.68142" height="15" style="fill: #000099" />
+							<line x1="125" y1="10" x2="125" y2="90" style="stroke: #666666; stroke-width: 2px" />
+						</svg>
+					</td>
+					<td class="seats"><div class="kmt-seats">55</div></td>
+				</tr>
+				<tr class="dpp-row">
+					<td class="image"><img src="../img/dpp.png" alt="民主進步黨"></td>
+					<td class="party">民主進步黨</td>
+					<td class="share-bar">
+						<svg width="250" height="90">
+							<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
+							<rect x="0" y="37.5" width="106.19469" height="15" style="fill: #1B9431" />
 							<line x1="125" y1="0" x2="125" y2="90" style="stroke: #666666; stroke-width: 2px" />
 						</svg>
 					</td>
-					<td class="vote">48</td>
+					<td class="seats"><div class="dpp-seats">48</div></td>
 				</tr>
 				<tr class="tpp-row">
 					<td class="image"><img src="../img/tpp.png" alt="台灣民眾黨"></td>
@@ -283,11 +287,11 @@
 					<td class="share-bar">
 						<svg width="250" height="90">
 							<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-							<rect x="0" y="37.5" width="22.124" height="15" style="fill: #28C7C7" />
+							<rect x="0" y="37.5" width="17.69912" height="15" style="fill: #28C7C7" />
 							<line x1="125" y1="0" x2="125" y2="90" style="stroke: #666666; stroke-width: 2px" />
 						</svg>
 					</td>
-					<td class="vote">10</td>
+					<td class="seats"><div class="tpp-seats">8</div></td>
 				</tr>
 				<tr class="npp-row">
 					<td class="image"><img src="../img/npp.svg" alt="時代力量"></td>
@@ -299,7 +303,7 @@
 							<line x1="125" y1="0" x2="125" y2="90" style="stroke: #666666; stroke-width: 2px" />
 						</svg>
 					</td>
-					<td class="vote">0</td>
+					<td class="seats"><div class="npp-seats">0</div></td>
 				</tr>
 				<tr class="ind-row">
 					<td class="image"><img src="../img/ind.svg" alt="無黨籍"></td>
@@ -307,74 +311,102 @@
 					<td class="share-bar">
 						<svg width="250" height="90">
 							<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-							<rect x="0" y="37.5" width="4.425" height="15" style="fill: #999999" />
+							<rect x="0" y="37.5" width="4.42478" height="15" style="fill: #999999" />
 							<line x1="125" y1="0" x2="125" y2="80" style="stroke: #666666; stroke-width: 2px" />
 						</svg>
 					</td>
-					<td class="vote">2</td>
+					<td class="seats"><div class="ind-seats">2</div></td>
 				</tr>
 			</table>
 		</div>
 
 		<div class="district-legislative">
 			<h3>區域立委</h3>
-
+			<div class="legislative-note">
+				備註：候選人只列著名的參選人。著名的參選人必須符合其中一項條件：
+				<ol><li>參選人獲得著名政黨的支持。著名政黨的定義為任何上屆政黨票獲得百分之三以上的政黨。符合條件的政黨有民主進步黨、中國國民黨、台灣民眾黨、時代力量、親民黨及台灣基進。</li><li>版主認為參選人有機會當選，或者參選人的存在可能會影響選情（漁翁得利的效果：吸走別的候選人的票，導致第三方獲勝）。</li></ol>
+			</div>
 			<div class="taipei-legislative">
 				<h4>臺北市</h4>
 				<table>
-					<tr>
-						<td class="district">臺北市第一選舉區</td>
-						<td class="dpp candidate">吳思瑤 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">張斯綱 <p class="legislator-party">中國國民黨</p></td>
-						<td class="ind candidate">侯漢廷 <p class="legislator-party">無黨籍</p></td>
-						<td></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">臺北市第二選舉區</td>
+						<td class="district ">臺北市第一選舉區<div class="legislative-rating lean-dpp">偏向民進黨</div></td>
+						<td class="dpp candidate">吳思瑤 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">張斯綱 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="ind candidate">侯漢廷 <p class="legislator-party">無黨籍</p></td>
+					</tr>
+					<tr>
+						<td class="district ">臺北市第二選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">王世堅 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">游淑慧 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-						<td class="tmgp candidate">謝尚衡 <p class="legislator-party">台灣麻將最大黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺北市第三選舉區</td>
+						<td class="district ">臺北市第三選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">謝佩芬 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">王鴻薇 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺北市第四選舉區</td>
+						<td class="district ">臺北市第四選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="dpp candidate">高嘉瑜 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">李彥秀 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td class="tsp candidate">吳欣岱 <p class="legislator-party">台灣基進</p></td>
 						<td></td>
 					<tr>
-						<td class="district">臺北市第五選舉區</td>
+						<td class="district ">臺北市第五選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">吳沛憶 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">鍾小平 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td class="ind candidate">于美人 <p class="legislator-party">無黨籍</p></td>
-						<td class="tmgp candidate">張華特 <p class="legislator-party">台灣麻將最大黨</p></td>
 					</tr>
 					<tr>
-						<td class="district">臺北市第六選舉區</td>
+						<td class="district ">臺北市第六選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="sdp candidate">苗博雅 <p class="legislator-party">社會民主黨</p></td>
 						<td class="kmt candidate">羅智強 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺北市第七選舉區</td>
+						<td class="district ">臺北市第七選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">許淑華 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">徐巧芯 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-						<td class="tmgp candidate">方定瑜 <p class="legislator-party">台灣麻將最大黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺北市第八選舉區</td>
+						<td class="district ">臺北市第八選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="dpp candidate">王閔生 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">賴士葆 <p class="legislator-party">中國國民黨</p></td>
 						<td class="tpp candidate">張其祿 <p class="legislator-party">台灣民眾黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -383,75 +415,120 @@
 			<div class="new-taipei-legislative">
 				<h4>新北市</h4>
 				<table>
-					<tr>
-						<td class="district">新北市第一選舉區</td>
-						<td class="dpp candidate">何博文 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">洪孟楷 <p class="legislator-party">中國國民黨</p></td>
-						<td></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">新北市第二選舉區</td>
+						<td class="district ">新北市第一選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
+						<td class="dpp candidate">何博文 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">洪孟楷 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">新北市第二選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">林淑芬 <p class="legislator-party">民主進步黨</p></td>
 						<td></td>
 						<td class="tpp candidate">李有宜 <p class="legislator-party">台灣民眾黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr> 
 					<tr>
-						<td class="district">新北市第三選舉區</td>
+						<td class="district ">新北市第三選舉區<div class="legislative-rating lean-dpp">偏向民進黨</div></td>
 						<td class="dpp candidate">李坤城 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">蔡明堂 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">新北市第四選舉區</td>
+						<td class="district ">新北市第四選舉區<div class="legislative-rating lean-dpp">偏向民進黨</div></td>
 						<td class="dpp candidate">吳秉叡	<p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">蔣欣璋 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					<tr>
-						<td class="district">新北市第五選舉區</td>
+						<td class="district ">新北市第五選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">蘇巧慧 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">洪佳君 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">新北市第六選舉區</td>
+						<td class="district ">新北市第六選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">張宏陸 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">林國春 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">新北市第七選舉區</td>
+						<td class="district ">新北市第七選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">羅致政 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">葉元之 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-					</tr>
-					<tr>
-						<td class="district">新北市第八選舉區</td>
-						<td class="dpp candidate">吳崢 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">張智倫 <p class="legislator-party">中國國民黨</p></td>
-						<td class="tpp candidate">邱臣遠 <p class="legislator-party">台灣民眾黨</p></td>
-					</tr>
-					<tr>
-						<td class="district">新北市第九選舉區</td>
-						<td class="dpp candidate">莊銘淵 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">林德福 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td class="district">新北市第十選舉區</td>
+						<td class="district ">新北市第八選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
+						<td class="dpp candidate">吳崢 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">張智倫 <p class="legislator-party">中國國民黨</p></td>
+						<td class="tpp candidate">邱臣遠 <p class="legislator-party">台灣民眾黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="district ">新北市第九選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
+						<td class="dpp candidate">莊銘淵 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">林德福 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="district ">新北市第十選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">吳琪銘 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">林金結 <p class="legislator-party">中國國民黨</p></td>
-						<td class="tmgp candidate">張哲源 <p class="legislator-party">台灣麻將最大黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">新北市第十一選舉區</td>
+						<td class="district ">新北市第十一選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="dpp candidate">曾柏瑜 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">羅明才 <p class="legislator-party">中國國民黨</p></td>
-						<td class="ind candidate">吳柏瑋 <p class="legislator-party">無黨籍</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">新北市第十二選舉區</td>
+						<td class="district ">新北市第十二選舉區<div class="legislative-rating lean-kmt">偏向國民黨</div></td>
 						<td class="dpp candidate">賴品妤 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">廖先翔 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -460,46 +537,66 @@
 			<div class="taoyuan-legislative">
 				<h4>桃園市</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">桃園市第一選舉區</td>
+						<td class="district ">桃園市第一選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">鄭運鵬 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">牛煦庭 <p class="legislator-party">中國國民黨</p></td>
-						<td class="npp candidate">徐鈺雯 <p class="legislator-party">時代力量</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 						<td class="ind candidate">馬治薇 <p class="legislator-party">無黨籍</p></td>
 					</tr>
 					<tr>
-						<td class="district">桃園市第二選舉區</td>
+						<td class="district ">桃園市第二選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">黃世杰 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">涂權吉 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">桃園市第三選舉區</td>
+						<td class="district ">桃園市第三選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">彭俊豪 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">魯明哲 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td class="np candidate">游智彬 <p class="legislator-party">新黨</p></td>
 					</tr>
 					<tr>
-						<td class="district">桃園市第四選舉區</td>
+						<td class="district ">桃園市第四選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">范綱祥	<p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">萬美玲 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-						<td class="cp candidate">甘乃迪 <p class="legislator-party">公民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					<tr>
-						<td class="district">桃園市第五選舉區</td>
+						<td class="district ">桃園市第五選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">劉仁照 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">呂玉玲 <p class="legislator-party">中國國民黨</p></td>
 						<td class="tpp candidate">賴香伶 <p class="legislator-party">台灣民眾黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">桃園市第六選舉區</td>
+						<td class="district ">桃園市第六選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="ind candidate">趙正宇 <p class="legislator-party">無黨籍</p></td>
 						<td class="kmt candidate">邱若華 <p class="legislator-party">中國國民黨</p></td>
 						<td class="tpp candidate">李慕妍 <p class="legislator-party">台灣民眾黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -508,52 +605,84 @@
 			<div class="taichung-legislative">
 				<h4>臺中市</h4>
 				<table>
-					<tr>
-						<td class="district">臺中市第一選舉區</td>
-						<td class="dpp candidate">蔡其昌 <p class="legislator-party">民主進步黨</p></td>
-						<td></td>
-						<td class="tpp candidate">蔡壁如 <p class="legislator-party">台灣民眾黨</p></td>
-						<td></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">臺中市第二選舉區</td>
+						<td class="district ">臺中市第一選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
+						<td class="dpp candidate">蔡其昌 <p class="legislator-party">民主進步黨</p></td>
+						<td class="candidate"></td>
+						<td class="tpp candidate">蔡壁如 <p class="legislator-party">台灣民眾黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="ind candidate">劉燈鐘 <p class="legislator-party">無黨籍</p></td>
+					</tr>
+					<tr>
+						<td class="district ">臺中市第二選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">林靜儀 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">顏寬恒 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺中市第三選舉區</td>
+						<td class="district ">臺中市第三選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">謝子涵 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">楊瓊瓔 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺中市第四選舉區</td>
+						<td class="district ">臺中市第四選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">張廖萬堅 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">廖偉翔 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					<tr>
-						<td class="district">臺中市第五選舉區</td>
+						<td class="district ">臺中市第五選舉區<div class="legislative-rating lean-kmt">偏向國民黨</div></td>
 						<td class="dpp candidate">莊競程 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">黃健豪 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺中市第六選舉區</td>
+						<td class="district ">臺中市第六選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">江肇國 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">羅廷瑋 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-					</tr>
-					<tr>
-						<td class="district">臺中市第七選舉區</td>
-						<td class="dpp candidate">何欣純 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">林家興 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺中市第八選舉區</td>
+						<td class="district ">臺中市第七選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
+						<td class="dpp candidate">何欣純 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">林家興 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="district ">臺中市第八選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">謝志忠 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">江啟臣 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -562,40 +691,66 @@
 			<div class="tainan-legislative">
 				<h4>臺南市</h4>
 				<table>
-					<tr>
-						<td class="district">臺南市第一選舉區</td>
-						<td class="dpp candidate">賴惠員 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">周宏昌 <p class="legislator-party">中國國民黨</p></td>
-						<td class="ind candidate">魏耀乾 <p class="legislator-party">無黨籍</p></td>
-						<td></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">臺南市第二選舉區</td>
+						<td class="district ">臺南市第一選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
+						<td class="dpp candidate">賴惠員 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">周宏昌 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="ind candidate">魏耀乾 <p class="legislator-party">無黨籍</p></td>
+					</tr>
+					<tr>
+						<td class="district ">臺南市第二選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
 						<td class="dpp candidate">郭國文 <p class="legislator-party">民主進步黨</p></td>
 						<td class="ind candidate">陳昆和 <p class="legislator-party">無黨籍</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺南市第三選舉區</td>
+						<td class="district ">臺南市第三選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
 						<td class="dpp candidate">陳亭妃 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">姚正玉 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-					</tr>
-					<tr>
-						<td class="district">臺南市第四選舉區</td>
-						<td class="dpp candidate">林宜瑾 <p class="legislator-party">民主進步黨</p></td>
-						<td class="ind candidate">李全教 <p class="legislator-party">無黨籍</p></td>
-						<td class="tmgp candidate">何力弘 <p class="legislator-party">台灣麻將最大黨</p></td>
-					<tr>
-						<td class="district">臺南市第五選舉區</td>
-						<td class="dpp candidate">林俊憲 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">王家貞 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td class="district">臺南市第六選舉區</td>
+						<td class="district ">臺南市第四選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
+						<td class="dpp candidate">林宜瑾 <p class="legislator-party">民主進步黨</p></td>
+						<td class="ind candidate">李全教 <p class="legislator-party">無黨籍</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					<tr>
+						<td class="district ">臺南市第五選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
+						<td class="dpp candidate">林俊憲 <p class="legislator-party">民主進步黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td class="district ">臺南市第六選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">王定宇 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">陳以信 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td class="ind candidate">陳永和 <p class="legislator-party">無黨籍</p></td>
 					</tr>
 				</table>
@@ -604,57 +759,82 @@
 			<div class="kaohsiung-legislative">
 				<h4>高雄市</h4>
 				<table>
-					<tr>
-						<td class="district">高雄市第一選舉區</td>
-						<td class="dpp candidate">邱議瑩 <p class="legislator-party">民主進步黨</p></td>
-						<td></td>
-						<td class="tpp candidate">曾尹儷 <p class="legislator-party">台灣民眾黨</p></td>
-						<td class="cp candidate">江嘉盛 <p class="legislator-party">公民黨</p></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">高雄市第二選舉區</td>
+						<td class="district ">高雄市第一選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
+						<td class="dpp candidate">邱議瑩 <p class="legislator-party">民主進步黨</p></td>
+						<td class="ind candidate">林義迪 <p class="legislator-party">無黨籍</p></td>
+						<td class="tpp candidate">曾尹儷 <p class="legislator-party">台灣民眾黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">高雄市第二選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
 						<td class="dpp candidate">邱志偉 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">曹桓榮 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">高雄市第三選舉區</td>
+						<td class="district ">高雄市第三選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">李柏毅 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">李眉蓁 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
-						<td class="tmgp candidate">郭璽 <p class="legislator-party">台灣麻將最大黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">高雄市第四選舉區</td>
+						<td class="district ">高雄市第四選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
 						<td class="dpp candidate">林岱樺 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">陳若翠 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					<tr>
-						<td class="district">高雄市第五選舉區</td>
+						<td class="district ">高雄市第五選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">李昆澤 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">黃柏霖 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">高雄市第六選舉區</td>
+						<td class="district ">高雄市第六選舉區<div class="legislative-rating lean-dpp">偏向民進黨</div></td>
 						<td class="dpp candidate">黃捷 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">陳美雅 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 						<td class="fa candidate">郭倍宏 <p class="legislator-party">喜樂島聯盟</p></td>
 					</tr>
 					<tr>
-						<td class="district">高雄市第七選舉區</td>
+						<td class="district ">高雄市第七選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">許智傑 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">鍾易仲 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">高雄市第八選舉區</td>
+						<td class="district ">高雄市第八選舉區<div class="legislative-rating safe-dpp">穩定民進黨</div></td>
 						<td class="dpp candidate">賴瑞隆 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">李明璇 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -663,12 +843,23 @@
 			<div class="keelung-legislative">
 				<h4>基隆市</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">基隆市選舉區</td>
+						<td class="district ">基隆市選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">鄭文婷 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">林沛祥 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
 						<td class="ind candidate">王醒之 <p class="legislator-party">無黨籍</p></td>
-						<td class="tmgp candidate">張世昌 <p class="legislator-party">台灣麻將最大黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -676,12 +867,23 @@
 			<div class="yilan-legislative">
 				<h4>宜蘭縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">宜蘭縣選舉區</td>
+						<td class="district ">宜蘭縣選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">陳俊宇 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">黃琤婷 <p class="legislator-party">中國國民黨</p></td>
 						<td class="tpp candidate">陳琬惠 <p class="legislator-party">台灣民眾黨</p></td>
+						<td class="candidate"></td>
 						<td class="tsp candidate">林意評 <p class="legislator-party">台灣基進</p></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -689,17 +891,32 @@
 			<div class="hsinchu-county-legislative">
 				<h4>新竹縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">新竹縣第一選舉區</td>
+						<td class="district ">新竹縣第一選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="dpp candidate">詹紀緹 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">徐欣瑩 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 						<td class="gpt candidate">余筱菁 <p class="legislator-party">台灣綠黨</p></td>
 					</tr>
 					<tr>
-						<td class="district">新竹縣第二選舉區</td>
+						<td class="district ">新竹縣第二選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">曾聖凱 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">林思銘 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
 						<td class="npp candidate">王婉諭 <p class="legislator-party">時代力量</p></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</table>
 			</div>
@@ -707,12 +924,23 @@
 			<div class="hsinchu-city-legislative">
 				<h4>新竹市</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">新竹市選舉區</td>
+						<td class="district ">新竹市選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">林志潔 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">鄭正鈐 <p class="legislator-party">中國國民黨</p></td>
 						<td class="ind candidate">柯美蘭 <p class="legislator-party">無黨籍</p></td>
 						<td class="npp candidate">邱顯智 <p class="legislator-party">時代力量</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -720,16 +948,30 @@
 			<div class="miaoli-legislative">
 				<h4>苗栗縣</h4>
 				<table>
-					<tr>
-						<td class="district">苗栗縣第一選舉區</td>
-						<td class="dpp candidate">康世明 <p class="legislator-party">民主進步黨</p></td>
-						<td class="ind candidate">陳超明 <p class="legislator-party">無黨籍</p></td>
-						<td class="tmgp candidate">洪鈺翔 <p class="legislator-party">台灣麻將最大黨</p></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">苗栗縣第二選舉區</td>
+						<td class="district ">苗栗縣第一選舉區<div class="legislative-rating safe-ind">穩定無黨籍</div></td>
+						<td class="dpp candidate">康世明 <p class="legislator-party">民主進步黨</p></td>
+						<td class="ind candidate">陳超明 <p class="legislator-party">無黨籍</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">苗栗縣第二選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="ind candidate">曾玟學 <p class="legislator-party">無黨籍</p></td>
 						<td class="kmt candidate">邱鎮軍 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -738,28 +980,49 @@
 			<div class="changhua-legislative">
 				<h4>彰化縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">彰化縣第一選舉區</td>
+						<td class="district ">彰化縣第一選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">陳秀寶 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">阮厚爵 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">彰化縣第二選舉區<div class="legislative-rating lean-kmt">偏向國民黨</div></td>
+						<td class="dpp candidate">黃秀芳 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">楊曜聰 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 					<tr>
-						<td class="district">彰化縣第二選舉區</td>
-						<td class="dpp candidate">黃秀芳 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">楊曜聰 <p class="legislator-party">中國國民黨</p></td>
-						<td class="tmgp candidate">鄒伊忠 <p class="legislator-party">台灣麻將最大黨</p></td>
-					</tr>
-					<tr>
-						<td class="district">彰化縣第三選舉區</td>
+						<td class="district ">彰化縣第三選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
 						<td class="dpp candidate">吳音寧 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">謝衣鳳 <p class="legislator-party">中國國民黨</p></td>
 						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 					<tr>
-						<td class="district">彰化縣第四選舉區</td>
+						<td class="district ">彰化縣第四選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">陳素月 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">鄭俊雄 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -768,16 +1031,31 @@
 			<div class="nantou-legislative">
 				<h4>南投縣</h4>
 				<table>
-					<tr>
-						<td class="district">南投縣第一選舉區</td>
-						<td class="dpp candidate">蔡銘軒 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">馬文君 <p class="legislator-party">中國國民黨</p></td>
-						<td class="lp candidate">許文忠 <p class="legislator-party">勞動黨</p></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">南投縣第二選舉區</td>
+						<td class="district ">南投縣第一選舉區<div class="legislative-rating likely-kmt">利於國民黨</div></td>
+						<td class="dpp candidate">蔡銘軒 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">馬文君 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">南投縣第二選舉區<div class="legislative-rating lean-kmt">偏向國民黨</div></td>
 						<td class="dpp candidate">蔡培慧 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">游顥 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td class="ind candidate">陳癸佑 <p class="legislator-party">無黨籍</p></td>
 					</tr>
 				</table>
@@ -786,16 +1064,31 @@
 			<div class="yunlin-legislative">
 				<h4>雲林縣</h4>
 				<table>
-					<tr>
-						<td class="district">雲林縣第一選舉區</td>
-						<td class="dpp candidate">蘇治芬 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">丁學忠 <p class="legislator-party">中國國民黨</p></td>
-						<td class="trevp candidate">李昭儀 <p class="legislator-party">台灣革命黨</p></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">雲林縣第二選舉區</td>
+						<td class="district ">雲林縣第一選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
+						<td class="dpp candidate">蘇治芬 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">丁學忠 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">雲林縣第二選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">劉建國 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">邱良閱 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td></td>
 					</tr>
 				</table>
@@ -804,15 +1097,32 @@
 			<div class="chiayi-county-legislative">
 				<h4>嘉義縣</h4>
 				<table>
-					<tr>
-						<td class="district">嘉義縣第一選舉區</td>
-						<td class="dpp candidate">蔡易餘 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">詹琬蓁 <p class="legislator-party">中國國民黨</p></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">嘉義縣第二選舉區</td>
+						<td class="district ">嘉義縣第一選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
+						<td class="dpp candidate">蔡易餘 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">詹琬蓁 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+					</tr>
+					<tr>
+						<td class="district ">嘉義縣第二選舉區<div class="legislative-rating tossup">不分軒輊</div></td>
 						<td class="dpp candidate">陳冠廷 <p class="legislator-party">民主進步黨</p></td>
 						<td class="ind candidate">林國慶 <p class="legislator-party">無黨籍</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</table>
 			</div>
@@ -820,12 +1130,23 @@
 			<div class="chiayi-city-legislative">
 				<h4>嘉義市</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">嘉義市選舉區</td>
+						<td class="district ">嘉義市選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">王美惠 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">張秀華 <p class="legislator-party">中國國民黨</p></td>
-						<td class="cp candidate">簡明廉 <p class="legislator-party">公民黨</p></td>
-						<td class="ind candidate">蔡松益 <p class="legislator-party">無黨籍</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -833,15 +1154,30 @@
 			<div class="pingtung-legislative">
 				<h4>屏東縣</h4>
 				<table>
-					<tr>
-						<td class="district">屏東縣第一選舉區</td>
-						<td class="dpp candidate">鍾佳濱 <p class="legislator-party">民主進步黨</p></td>
-						<td class="kmt candidate">黃明賢 <p class="legislator-party">中國國民黨</p></td>
-						<td></td>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
 					</tr>
 					<tr>
-						<td class="district">屏東縣第二選舉區</td>
+						<td class="district ">屏東縣第一選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
+						<td class="dpp candidate">鍾佳濱 <p class="legislator-party">民主進步黨</p></td>
+						<td class="kmt candidate">黃明賢 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="ind candidate">蔣月惠 <p class="legislator-party">無黨籍</p></td>
+					</tr>
+					<tr>
+						<td class="district ">屏東縣第二選舉區<div class="legislative-rating likely-dpp">利於民進黨</div></td>
 						<td class="dpp candidate">徐富癸 <p class="legislator-party">民主進步黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
 						<td></td>
 						<td class="ind candidate">蘇孟淳 <p class="legislator-party">無黨籍</p></td>
 					</tr>
@@ -851,10 +1187,23 @@
 			<div class="hualien-legislative">
 				<h4>花蓮縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">花蓮縣選舉區</td>
+						<td class="district ">花蓮縣選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="dpp candidate">張美慧 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">傅崐萁 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -862,10 +1211,23 @@
 			<div class="taitung-legislative">
 				<h4>臺東縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">臺東縣選舉區</td>
+						<td class="district ">臺東縣選舉區<div class="legislative-rating lean-kmt">偏向國民黨</div></td>
 						<td class="dpp candidate">賴坤成 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">黃建賓 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="ind candidate">劉櫂豪 <p class="legislator-party">無黨籍</p></td>
 					</tr>
 				</table>
 			</div>
@@ -873,11 +1235,23 @@
 			<div class="penghu-legislative">
 				<h4>澎湖縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">澎湖縣選舉區</td>
+						<td class="district ">澎湖縣選舉區<div class="legislative-rating lean-dpp">偏向民進黨</div></td>
 						<td class="dpp candidate">楊曜 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">吳政杰 <p class="legislator-party">中國國民黨</p></td>
-						<td class="ind candidate">陳慧娟 <p class="legislator-party">無黨籍</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -885,11 +1259,23 @@
 			<div class="kinmen-legislative">
 				<h4>金門縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">金門縣選舉區</td>
-						<td ckass="candidate"></td>
+						<td class="district ">金門縣選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
+						<td class="candidate"></td>
 						<td class="kmt candidate">陳玉珍 <p class="legislator-party">中國國民黨</p></td>
 						<td class="tpp candidate">尚文凱 <p class="legislator-party">台灣民眾黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 				</table>
 			</div>
@@ -897,12 +1283,23 @@
 			<div class="lienchiang-legislative">
 				<h4>連江縣</h4>
 				<table>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
 					<tr>
-						<td class="district">連江縣選舉區</td>
+						<td class="district ">連江縣選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div></td>
 						<td class="dpp candidate">李問 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">陳雪生 <p class="legislator-party">中國國民黨</p></td>
 						<td class="tpp candidate">曹爾凱 <p class="legislator-party">台灣民眾黨</p></td>
-						<td class="cp candidate">李克焜 <p class="legislator-party">公民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 						<td></td>
 					</tr>
 				</table>
@@ -912,47 +1309,53 @@
 		<div class="indigenous-legislative">
 			<h3>原住民立委</h3>
 			<table class="indigenous">
+				<thead>
+					<tr class="header-row">
+						<th></th>
+						<th>民主進步黨</th>
+						<th>中國國民黨</th>
+						<th>台灣民眾黨</th>
+						<th>時代力量</th>
+						<th>台灣基進</th>
+						<th>無黨籍、其他</th>
+					</tr>
+				</thead>
 				<tbody>
 					<tr>
-						<td class="district">平地原住民選舉區</td>
-					</tr>
-					<tr>
-						<td class="dpp candidate">陳瑩 <p class="legislator-party">民主進步黨</p></td>			
-					</tr>
-					<tr>
+						<td class="district" rowspan="2">平地原住民選舉區<div class="legislative-rating safe-kmt">穩定國民黨</div><div class="legislative-rating likely-kmt">利於國民黨</div><div class="legislative-rating likely-dpp">利於民進黨</div></td>
+						<td class="dpp candidate">陳瑩 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">鄭天財 <p class="legislator-party">中國國民黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
 					</tr>
 					<tr>
+						<td></td>
 						<td class="kmt candidate">黃仁 <p class="legislator-party">中國國民黨</p></td>
-					</tr>
-					<tr>
-						<td class="ind candidate">陳政宗 <p class="legislator-party">無黨籍</p></td>
-					</tr>
-					<tr>
-						<td class="tmgp candidate">潘彥睿 <p class="legislator-party">台灣麻將最大黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</tbody>
-			</table>
-
-			<table class="indigenous">
 				<tbody>
 					<tr>
-						<td class="highland district">山地原住民選舉區</td>
-					</tr>
-					<tr>
-						<td class="dpp candidate">伍麗華 <p class="legislator-party">民主進步黨</p></td>					
-					</tr>
-					<tr>
+						<td class="highland district" rowspan="2">山地原住民選舉區<div class="legislative-rating safe-ind">穩定無黨籍</div><div class="legislative-rating likely-kmt">利於國民黨</div><div class="legislative-rating tossup">不分軒輊</div></td>
+						<td class="dpp candidate">伍麗華 <p class="legislator-party">民主進步黨</p></td>
 						<td class="kmt candidate">孔文吉 <p class="legislator-party">中國國民黨</p></td>
-					</tr>
-					<tr>
-						<td class="kmt candidate">盧縣一 <p class="legislator-party">中國國民黨</p></td>
-					</tr>
-					<tr>
 						<td class="tpp candidate">胡黃廣文 <p class="legislator-party">台灣民眾黨</p></td>
+						<td class="candidate"></td>
+						<td class="candidate"></td>
+						<td class="ind candidate">高金素梅 <p class="legislator-party">無黨籍</p></td>
 					</tr>
 					<tr>
-						<td class="ind candidate">高金素梅 <p class="legislator-party">無黨籍</p></td>
+						<td></td>
+						<td class="kmt candidate">盧縣一 <p class="legislator-party">中國國民黨</p></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
 					</tr>
 				</tbody>
 			</table>
@@ -962,17 +1365,10 @@
 			<h3>不分區立委</h3>
 			<h4>政黨票</h4>
 				<table>
-					<tr class="dpp-row">
-						<td class="image"><img src="../img/dpp.png" alt="民主進步黨"></td>
-						<td class="party">民主進步黨</td>
-						<td class="share-bar">
-							<svg width="250" height="90">
-								<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-								<rect x="0" y="37.5" width="79.5" height="15" style="fill: #1B9431" />
-							</svg>
-						</td>
-						<td class="vote">31.8%</td>
-						<td class="seats">12</td>
+					<tr class="header-row">
+						<th colspan="2">政黨</th>
+						<th colspan="2">預估得票率</th>
+						<th>席次</th>
 					</tr>
 					<tr class="kmt-row">
 						<td class="image"><img src="../img/kmt.svg" alt="中國國民黨"></td>
@@ -980,11 +1376,23 @@
 						<td class="share-bar">
 							<svg width="250" height="90">
 								<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-								<rect x="0" y="37.5" width="78.25" height="15" style="fill: #000099" />
+								<rect x="0" y="37.5" width="89.73168" height="15" style="fill: #000099" />
 							</svg>
 						</td>
-						<td class="vote">31.3%</td>
-						<td class="seats">12</td>
+						<td class="vote">35.9%</td>
+						<td class="seats"><div class="kmt-seats">14</div></td>
+					</tr>
+					<tr class="dpp-row">
+						<td class="image"><img src="../img/dpp.png" alt="民主進步黨"></td>
+						<td class="party">民主進步黨</td>
+						<td class="share-bar">
+							<svg width="250" height="90">
+								<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
+								<rect x="0" y="37.5" width="80.78037" height="15" style="fill: #1B9431" />
+							</svg>
+						</td>
+						<td class="vote">32.3%</td>
+						<td class="seats"><div class="dpp-seats">12</div></td>
 					</tr>
 					<tr class="tpp-row">
 						<td class="image"><img src="../img/tpp.png" alt="台灣民眾黨"></td>
@@ -992,11 +1400,11 @@
 						<td class="share-bar">
 							<svg width="250" height="90">
 								<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-								<rect x="0" y="37.5" width="60.5" height="15" style="fill: #28C7C7" />
+								<rect x="0" y="37.5" width="50.99683" height="15" style="fill: #28C7C7" />
 							</svg>
 						</td>
-						<td class="vote">24.2%</td>
-						<td class="seats">10</td>
+						<td class="vote">20.4%</td>
+						<td class="seats"><div class="tpp-seats">8</div></td>
 					</tr>
 					<tr class="npp-row">
 						<td class="image"><img src="../img/npp.svg" alt="時代力量"></td>
@@ -1004,11 +1412,11 @@
 						<td class="share-bar">
 							<svg width="250" height="90">
 								<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-								<rect x="0" y="37.5" width="10.5" height="15" style="fill: #FFBE00" />
+								<rect x="0" y="37.5" width="9.54747" height="15" style="fill: #FFBE00" />
 							</svg>
 						</td>
-						<td class="vote">4.2%</td>
-						<td class="seats">0</td>
+						<td class="vote">3.8%</td>
+						<td class="seats"><div class="npp-seats">0</div></td>
 					</tr>
 					<tr class="tsp-row">
 						<td class="image"><img src="../img/tsp.png" alt="台灣基進"></td>
@@ -1016,11 +1424,11 @@
 						<td class="share-bar">
 							<svg width="250" height="90">
 								<rect x="0" y="37.5" width="250" height="15" style="fill: #E4E4E4" />
-								<rect x="0" y="37.5" width="8.25" height="15" style="fill: #A73F24" />
+								<rect x="0" y="37.5" width="6.16525" height="15" style="fill: #A73F24" />
 							</svg>
 						</td>
-						<td class="vote">3.3%</td>
-						<td class="seats">0</td>
+						<td class="vote">2.5%</td>
+						<td class="seats"><div class="tsp-seats">0</div></td>
 					</tr>
 				</table>
 			</div>

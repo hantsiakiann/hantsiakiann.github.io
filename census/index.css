@@ -1,0 +1,309 @@
+* {
+  font-size: 20px;
+}
+
+.en {
+  font-family: "Raleway", sans-serif;
+}
+
+.zh-tw {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.navbar ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,.2);
+  height: 60px;
+}
+
+.navbar ul li {
+  float: left;
+  height: 64px;
+}
+
+.navbar ul li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  background-color: #F0F0F0;
+}
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,.2);
+  min-width: 160px;
+}
+
+.navbar ul li .navbar-dropdown a {
+  text-align: left;
+}
+
+.navbar ul li:hover .navbar-dropdown {
+  display: block;
+}
+
+#nav-title {
+  font-weight: 700;
+}
+
+#lang-zh, #lang-en {
+  float: right;
+  height: 100%;
+}
+
+#main {
+  margin-top: 100px;
+  scroll-margin-top: 100px;
+}
+
+#population, #census-race, #race-ancestry-birthplace, #age, #language, #education, #income, #homeownership {
+  scroll-margin-top: 75px;
+}
+
+h1 {
+  font-size: 54px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  padding-left: 30px;
+}
+
+p {
+  margin: 10px 40px;
+}
+
+#census-race-box {
+  width: 640px;
+  background-color: #E2F4FC;
+  border-radius: 30px;
+  padding: 30px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Helvetica;
+}
+
+#census-race-q-no {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+#census-race-q-main {
+  font-weight: 700;
+}
+
+#census-race-q-sub {
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.census-race-q {
+  font-size: 20px;
+}
+
+.census-check {
+  -webkit-appearance: initial;
+  appearance: initial;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border: 3px solid #6BCFF6;
+  position: relative;
+  outline: 8px solid #FFFFFF;
+  top: 3px;
+  margin: 8px 16px;
+  font-size: 16px;
+}
+
+.census-check:checked {
+  background: #FFFFFF;
+}
+
+.census-check:checked:after {
+  padding: 0px;
+  content: "\2718";
+  color: #000000;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+#census-check-text {
+  margin: 0px;
+  border: 2px solid #6BCFF6;
+  outline: none;
+  font-size: 18px;
+}
+
+.check-2col-row {
+  margin-left: 17px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.check-4col-row {
+  margin-left: 17px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.check-6col-row {
+  margin-left: 17px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.check-box {
+  width: 36px;
+  float: left;
+}
+
+.check-2col-text {
+  width: 540px;
+  float: left;
+  margin: 12px 0px 0px 18px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.check-4col-text-l {
+  width: 165px;
+  float: left;
+  margin: 12px 129px 0px 18px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.check-4col-text-r {
+  width: 180px;
+  float: left;
+  margin: 12px 0px 0px 18px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.check-6col-text {
+  width: 120px;
+  float: left;
+  margin: 12px 0px 0px 18px;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.census-text-ital {
+  font-size: 16px;
+}
+
+.census-fill {
+  border: 3px solid #6BCFF6;
+  margin: 8px 0px 16px 0px;
+  width: 500px;
+  height: 36px;
+}
+
+#aanhpi-fill {
+  margin-left: 70px;
+}
+
+#census-geo-box {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+#census-slider {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+#census-year {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 12px;
+  -webkit-transition: 0.25s;
+  transition: opacity 0.25s;
+  background-color: #DDDDDD;
+  opacity: 0.4;
+  margin-bottom: 18px;
+}
+
+#census-year:hover {
+  opacity: 0.6;
+}
+
+#census-year::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 48px;
+  background-image: url('img/taiwan-slider.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#census-year::-moz-range-thumb {
+  width: 30px;
+  height: 48px;
+  background-image: url('img/taiwan-slider.svg');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#census-year-ind {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#count-2024 {
+  font-size: 20px;
+  color:#FFFFFF;
+  background-color: #085C4C;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+svg g circle:hover {
+  fill-opacity: 0.8;
+}
+
+h3 {
+  font-size: 36px;
+  padding-left: 30px;
+}
+
+h4 {
+  font-size: 28px;
+  padding-left: 60px;
+}

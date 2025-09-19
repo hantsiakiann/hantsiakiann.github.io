@@ -1,0 +1,117 @@
+<html>
+<head>
+	<title>Taiwanese Americans, By the Numbers</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap">
+	<link rel="icon" href="img/tacl.png">
+</head>
+
+<body class="en">
+<div class="navbar">
+	<ul>
+		<li id="nav-title"><a href="#main">Top</a></li>
+		<li><a href="#population">Population</a>
+			<div class="navbar-dropdown">
+				<a href="#census-race">Census: Race Data</a>
+			    <a href="#race-ancestry-birthplace">ACS: Race, Ancestry, and Birthplace Data</a>
+			</div>
+		</li>
+		<li><a href="#age">Age</a></li>
+		<li><a href="#language">Language</a></li>
+		<li><a href="#education">Education</a>
+		<li><a href="#income">Income</a>
+		<li><a href="#homeownership">Homeownership</a>
+		<li id="lang-zh"><a href="zh/index.html">中文</a></li>
+	</ul>
+</div>
+
+<div id="main">
+	<h1>Taiwanese Americans, By the Numbers</h1>
+	<h2 id="population">Population</h2>
+	<p>When asking about race, the U.S. Census Bureau does not offer Taiwanese as a checkbox.</p>
+	<div id="census-race-box">
+		<div class="census-race-q" id="census-race-q-main"><span id="census-race-q-no">9.</span> What is Person 1's race?</div>
+		<div class="census-race-q" id="census-race-q-sub"><i>Mark <input type="checkbox" class="census-check" id="census-check-text" checked disabled> one or more boxes <b>AND</b> print origins.</i></div>
+		<div class="check-2col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-2col-text">
+				White &mdash; <i class="census-text-ital">Print, for example, German, Irish, English, Italian, Lebanese, Egyptian, etc. &swarr;</i><br>
+				<input type="text" maxlength="16" class="census-fill" />
+			</div>
+		</div>
+		<div class="check-2col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-2col-text">
+				Black or African Am. &mdash; <i class="census-text-ital">Print, for example, African American, Jamaican, Haitian, Nigerian, Ethiopian, Somali, etc. &swarr;</i><br>
+				<input type="text" maxlength="16" class="census-fill" />
+			</div>
+		</div>
+		<div class="check-2col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-2col-text">
+				American Indian or Alaska Native &mdash; <i class="census-text-ital">Print name of enrolled or principal tribe(s), for example, Navajo Nation, Blackfeet Tribe, Mayan, Aztec, Native Village of Barrow Inupiat Traditional Government, Nome Eskimo Community, etc. &swarr;</i><br>
+				<input type="text" maxlength="16" class="census-fill" />
+			</div>
+		</div>
+		<div class="check-6col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Chinese</div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Vietnamese</div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Native Hawaiian</div>
+		</div>
+		<div class="check-6col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Filipino</div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Korean</div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Samoan</div>
+		</div>
+		<div class="check-6col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Asian Indian</div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Japanese</div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-6col-text">Chamorro</div>
+		</div>
+		<div class="check-4col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-4col-text-l">Other Asian &mdash; <br> <i class="census-text-ital">Print, for example, Pakistani, Cambodian, Hmong, etc. &swarr;</i></div>
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-4col-text-r">Other Pacific Islander &mdash; <i class="census-text-ital">Print, for example, Tongan, Fijian, Marshallese, etc. &swarr;</i></div>
+		</div>
+		<input type="text" maxlength="16" class="census-fill" id="aanhpi-fill" />
+		<div class="check-2col-row">
+			<div class="check-box"><input type="checkbox" class="census-check"></div>
+			<div class="check-2col-text">
+				Some other race &mdash; <i class="census-text-ital">Print race or origin. &swarr;</i><br>
+				<input type="text" maxlength="16" class="census-fill" />
+			</div>
+		</div>
+	</div>
+	<h3 id="census-race">Census: Race Data</h3>
+	<p>The U.S. Census Bureau began reporting Taiwanese as its own racial category in 1990. See how the population of Taiwanese Americans has changed since then.</p>
+	<div id="census-geo-box"><svg id="census-geo"></svg></div>
+	
+
+	<div id="census-slider"><input type="range" class="slider" id="census-year" min="1990" max="2020" value="1990" step="10"/><br><span id="census-year-ind">1990</span></div>
+	
+
+	<p></p>
+	<h3 id="race-ancestry-birthplace">ACS: Race, Ancestry, and Birthplace Data</h3>
+	<p>As of 2024, there are an estimated <span id="count-2024">380382</span> Taiwanese Americans.</p>
+
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/topojson-client@3"></script>
+<script src="map-file.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
+
+
